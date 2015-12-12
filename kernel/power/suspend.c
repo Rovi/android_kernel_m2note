@@ -33,10 +33,6 @@
 #define MTK_SOLUTION 1
 
 struct pm_sleep_state pm_states[PM_SUSPEND_MAX] = {
-//<20130327> <marc.huang> merge from android kernel 3.0 - add [PM_SUSPEND_ON] into pm_states
-#ifdef CONFIG_EARLYSUSPEND
-	[PM_SUSPEND_ON] = { .label = "on", .state = PM_SUSPEND_ON },
-#endif
 	[PM_SUSPEND_FREEZE] = { .label = "freeze", .state = PM_SUSPEND_FREEZE },
 	[PM_SUSPEND_STANDBY] = { .label = "standby", },
 	[PM_SUSPEND_MEM] = { .label = "mem", },
