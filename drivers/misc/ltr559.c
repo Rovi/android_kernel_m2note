@@ -9,7 +9,6 @@
  */
 
 #include <linux/delay.h>
-#include <linux/earlysuspend.h>
 #include <linux/errno.h>
 #include <linux/err.h>
 #include <linux/fs.h>
@@ -336,7 +335,7 @@ struct LTR559_data {
 	struct input_dev *als_input_dev;
 	struct input_dev *ps_input_dev;
 	struct workqueue_struct *workqueue;
-	struct early_suspend early_suspend;
+	/*struct early_suspend early_suspend;*/
 	struct wake_lock ps_wake_lock;
 	struct mutex bus_lock;
 
@@ -4862,10 +4861,12 @@ static int LTR559_probe(struct i2c_client *client, const struct i2c_device_id *i
 	}
 
 	/* Setup the suspend and resume functionality */
+	/* TODO: FBNotifier
 	LTR559->early_suspend.level = EARLY_SUSPEND_LEVEL_DISABLE_FB + 1;
 	LTR559->early_suspend.suspend = LTR559_early_suspend;
 	LTR559->early_suspend.resume = LTR559_late_resume;
 	register_early_suspend(&LTR559->early_suspend);
+	*/
 
 	/* Register the sysfs files */
 	//sysfs_create_group(&client->dev.kobj, &LTR559_attribute_group);
