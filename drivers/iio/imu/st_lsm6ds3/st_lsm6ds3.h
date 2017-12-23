@@ -13,7 +13,6 @@
 
 #include <linux/types.h>
 #include <linux/iio/trigger.h>
-#include <linux/earlysuspend.h>
 #ifdef CONFIG_ST_LSM6DS3_IIO_MASTER_SUPPORT
 #include <linux/i2c.h>
 #endif /* CONFIG_ST_LSM6DS3_IIO_MASTER_SUPPORT */
@@ -208,7 +207,7 @@ struct lsm6ds3_data {
 
 	const struct st_lsm6ds3_transfer_function *tf;
 	struct st_lsm6ds3_transfer_buffer tb;
-	struct early_suspend early_suspend;
+	/*struct early_suspend early_suspend;*/
 };
 
 struct st_lsm6ds3_transfer_function {

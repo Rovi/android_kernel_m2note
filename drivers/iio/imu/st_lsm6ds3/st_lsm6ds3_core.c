@@ -2318,22 +2318,22 @@ struct meizu_sensors_ops meizu_lsm6ds3_gyr_ops = {
 	.self_test = &mz_sensors_lsm6ds3_gyr_self_test,
 };
 
-static void lsm6ds3_early_suspend(struct early_suspend *h)
+/*static void lsm6ds3_early_suspend(struct early_suspend *h)
 {
 	struct lsm6ds3_data *cdata = container_of(h, struct lsm6ds3_data,
 			early_suspend);
 
 	st_lsm6ds3_common_suspend(cdata);
 
-}
+}*/
 
-static void lsm6ds3_late_resume(struct early_suspend *h)
+/*static void lsm6ds3_late_resume(struct early_suspend *h)
 {
 	struct lsm6ds3_data *cdata = container_of(h, struct lsm6ds3_data,
 			early_suspend);
 
 	st_lsm6ds3_common_resume(cdata);
-}
+}*/
 
 int st_lsm6ds3_common_probe(struct lsm6ds3_data *cdata, int irq)
 {
@@ -2497,10 +2497,10 @@ int st_lsm6ds3_common_probe(struct lsm6ds3_data *cdata, int irq)
 	}
 #endif
 
-	cdata->early_suspend.level = EARLY_SUSPEND_LEVEL_DISABLE_FB + 1;
+	/*cdata->early_suspend.level = EARLY_SUSPEND_LEVEL_DISABLE_FB + 1;
 	cdata->early_suspend.suspend = lsm6ds3_early_suspend;
 	cdata->early_suspend.resume = lsm6ds3_late_resume;
-	register_early_suspend(&cdata->early_suspend);
+	register_early_suspend(&cdata->early_suspend);*/
 
 	return 0;
 
