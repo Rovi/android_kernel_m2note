@@ -206,8 +206,8 @@ static void __exit tpd_device_exit(void);
 static int tpd_probe(struct platform_device *pdev);
 static int tpd_remove(struct platform_device *pdev);
 
-extern void tpd_suspend(struct early_suspend *h);
-extern void tpd_resume(struct early_suspend *h);
+/*extern void tpd_suspend(struct early_suspend *h);
+extern void tpd_resume(struct early_suspend *h);*/
 extern void tpd_button_init(void);
 
 /* int tpd_load_status = 0; //0: failed, 1: sucess */
@@ -265,8 +265,8 @@ int tpd_driver_add(struct tpd_driver_t *tpd_drv)
 	if (strcmp(tpd_drv->tpd_device_name, "generic") == 0) {
 		tpd_driver_list[0].tpd_device_name = tpd_drv->tpd_device_name;
 		tpd_driver_list[0].tpd_local_init = tpd_drv->tpd_local_init;
-		tpd_driver_list[0].suspend = tpd_drv->suspend;
-		tpd_driver_list[0].resume = tpd_drv->resume;
+		/*tpd_driver_list[0].suspend = tpd_drv->suspend;
+		tpd_driver_list[0].resume = tpd_drv->resume;*/
 		tpd_driver_list[0].tpd_have_button = tpd_drv->tpd_have_button;
 		return 0;
 	}
@@ -275,8 +275,8 @@ int tpd_driver_add(struct tpd_driver_t *tpd_drv)
 		if (tpd_driver_list[i].tpd_device_name == NULL) {
 			tpd_driver_list[i].tpd_device_name = tpd_drv->tpd_device_name;
 			tpd_driver_list[i].tpd_local_init = tpd_drv->tpd_local_init;
-			tpd_driver_list[i].suspend = tpd_drv->suspend;
-			tpd_driver_list[i].resume = tpd_drv->resume;
+			/*tpd_driver_list[i].suspend = tpd_drv->suspend;
+			tpd_driver_list[i].resume = tpd_drv->resume;*/
 			tpd_driver_list[i].tpd_have_button = tpd_drv->tpd_have_button;
 			tpd_driver_list[i].attrs = tpd_drv->attrs;
 #if 0

@@ -3469,8 +3469,8 @@ static struct tpd_driver_t tpd_device_driver =
 {
     .tpd_device_name = "gt9xx",
     .tpd_local_init = tpd_local_init,
-    .suspend = tpd_suspend,
-    .resume = tpd_resume,
+    /*.suspend = tpd_suspend,
+    .resume = tpd_resume,*/
 #ifdef TPD_HAVE_BUTTON
     .tpd_have_button = 1,
 #else
