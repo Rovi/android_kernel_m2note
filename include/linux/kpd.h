@@ -34,7 +34,6 @@
 #include <linux/fs.h>
 #include <linux/miscdevice.h>
 #include <linux/platform_device.h>
-#include <linux/earlysuspend.h>
 #include <linux/aee.h>
 
 #ifdef CONFIG_MTK_SMARTBOOK_SUPPORT

@@ -7,7 +7,6 @@
 #include <linux/input.h>
 #include <linux/workqueue.h>
 #include <linux/kobject.h>
-#include <linux/earlysuspend.h>
 #include <linux/platform_device.h>
 #include <linux/xlog.h>
 #include <linux/sched.h>

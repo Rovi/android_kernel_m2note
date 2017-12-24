@@ -41,7 +41,6 @@
 #include <linux/syscalls.h>
 #include <linux/sched.h>
 #include <linux/writeback.h>
-#include <linux/earlysuspend.h>
 #include <linux/seq_file.h>
 #include <linux/of_fdt.h>
 

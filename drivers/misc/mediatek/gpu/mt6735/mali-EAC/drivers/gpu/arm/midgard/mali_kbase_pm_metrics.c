@@ -67,7 +67,6 @@ extern unsigned int g_power_status;
 extern unsigned int g_type_T;
 extern mtk_gpu_thd_level_offset gpu_thd_level_off[];
 
-#include <linux/earlysuspend.h>
 #include <linux/suspend.h>
 
 static enum hrtimer_restart dvfs_callback(struct hrtimer *timer);

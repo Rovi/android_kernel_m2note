@@ -12,7 +12,6 @@
 #include <linux/atomic.h>
 #include <linux/mutex.h>
 #include <linux/delay.h>
-#include <linux/earlysuspend.h>
 #include <linux/string.h>
 #include <linux/sysfs.h>
 #include <linux/sched/rt.h>

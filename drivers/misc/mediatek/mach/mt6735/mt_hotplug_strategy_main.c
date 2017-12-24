@@ -11,7 +11,6 @@
 #include <linux/module.h>               //MODULE_DESCRIPTION, MODULE_LICENSE
 #include <linux/init.h>                 //module_init, module_exit
 #include <linux/cpu.h>                  //cpu_up
-#include <linux/earlysuspend.h>         //register_early_suspend
 #include <linux/platform_device.h>      //platform_driver_register
 #include <linux/wakelock.h>             //wake_lock_init
 // project includes

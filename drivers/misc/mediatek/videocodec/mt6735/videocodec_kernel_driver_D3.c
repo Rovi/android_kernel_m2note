@@ -23,7 +23,6 @@
 #include <linux/semaphore.h>
 #include <mach/dma.h>
 #include <linux/delay.h>
-#include <linux/earlysuspend.h>
 #include "mach/sync_write.h"
 //#include "mach/mt_reg_base.h"
 #include "mach/mt_clkmgr.h"

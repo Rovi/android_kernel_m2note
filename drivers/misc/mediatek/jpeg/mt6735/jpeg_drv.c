@@ -44,7 +44,6 @@
 #include <linux/wait.h>
 #include <linux/spinlock.h>
 #include <linux/delay.h>
-#include <linux/earlysuspend.h>
 //#include <linux/mm.h>
 #include <linux/vmalloc.h>
 #include <linux/dma-mapping.h>

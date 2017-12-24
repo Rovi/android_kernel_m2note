@@ -16,7 +16,6 @@ extern "C" {
 // system includes
 #include <linux/kernel.h>                   //printk
 #include <linux/io.h>                       //__raw_readl
-#include <linux/earlysuspend.h>             //struct early_suspend
 #include <linux/platform_device.h>          //struct platform_driver
 #include <linux/kthread.h>                  //struct task_struct
 #include <linux/timer.h>                    //struct timer_list

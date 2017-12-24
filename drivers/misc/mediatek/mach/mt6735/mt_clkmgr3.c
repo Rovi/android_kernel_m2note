@@ -11,7 +11,6 @@
 #include <linux/device.h>
 #include <linux/platform_device.h>
 #include <linux/smp.h>
-#include <linux/earlysuspend.h>
 #include <linux/io.h>
 
 #include <mach/mt_typedefs.h>

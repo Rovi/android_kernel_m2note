@@ -3,7 +3,6 @@
 #include <linux/uaccess.h>
 #include <linux/delay.h>
 #include <linux/platform_device.h>
-#include <linux/earlysuspend.h>
 #include <linux/sched.h>
 #include "mach/mt_emi_bm.h"
 #include "mach/mt_dcm.h"

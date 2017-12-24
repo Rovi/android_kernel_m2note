@@ -18,7 +18,6 @@
 #include <linux/interrupt.h>
 #include <mach/irqs.h>
 #include <linux/wait.h>
-#include <linux/earlysuspend.h>
 #include <linux/slab.h>
 #include <linux/xlog.h>
 #include <mach/sync_write.h>
